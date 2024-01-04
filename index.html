@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manage Landing Page</title>
+    <link rel="stylesheet" href="input.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -62,15 +63,15 @@
          </a>
 
          <!-- Hamburger Icon-->
-         <button id="menu-btn" class="hamburger md:hidden focus:outline-none flex flex-col gap-y-[3px] items-center justify-center">
-          <span class="harmburger-top w-7 h-[1px] bg-gray-100"></span>
-          <span class="harmburger-middle w-7 h-[1px] bg-gray-100"></span>
-          <span class="harmburger-bottom w-7 h-[1px] bg-gray-100"></span>
+         <button id="menu-btn" class="open block hamburger md:hidden focus:outline-none flex flex-col gap-y-[3px] items-center justify-center">
+          <span class="harmburger-top w-7 h-[1px] bg-red-700"></span>
+          <span class="harmburger-middle w-7 h-[1px] bg-red-700"></span>
+          <span class="harmburger-bottom w-7 h-[1px] bg-red-700"></span>
          </button>
       </div>
       <!-- Mobile Menu -->
       <div class="md:hidden">
-        <div id="menu" class="absolute flex flex-col items-center self-end hidden py-8 nt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+        <div id="menu" class="absolute flex flex-col items-center self-end py-8 nt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
           <a href="#">Pricing</a>
           <a href="#">Product</a>
           <a href="#">About Us</a>
